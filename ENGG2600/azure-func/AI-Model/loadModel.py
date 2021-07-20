@@ -11,15 +11,9 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from .preProcess import processData
 
-def getPrediction(model, sampleNum, datafile):
-    a = np.fromfile(datafile, dtype=np.dtype('<u2'))
-    X = []
-    for x in a:
-        X.append(x)
-    newSample = np.asarray(X)
-
+def getPrediction(model, dataset):
     # Process sample
-    processedSample = processData(newSample)
+    processedSample = processData(dataset)
 
     prediction = np.argmax(model.predict(processedSample)) + 1
 
