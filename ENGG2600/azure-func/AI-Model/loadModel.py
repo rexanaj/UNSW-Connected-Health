@@ -9,11 +9,15 @@ from scipy.signal import resample
 from scipy import signal
 from scipy.signal import convolve as sig_convolve
 
-def getPrediction(model, dataset):
+def getPredictionProbability(model, dataset):
     # Process sample
     processedSample = processData(dataset)
+    predProb = model.predict(np.expand_dims(np.expand_dims(processedSample,axis=1),axis=0))
+    return predProb
 
-    prediction = np.argmax(model.predict(processedSample)) + 1
+def getPrediction(predictionProbability):
+    # Process sample
+    prediction = np.argmax(predictionProbability)+1
 
     # Print results
     if prediction == 1:
@@ -21,18 +25,23 @@ def getPrediction(model, dataset):
     elif prediction == 2:
         return "NSR"
     elif prediction == 3:
-        return "other"
+        return "Other"
     elif prediction == 4:
         return "Too noisy"
     else:
         return "Model failed"
 
+def isRejected(predictionProbability):
+    if np.max(predictionProbability)<0.97 and (np.max(predictionProbability)-second_largest(predictionProbability))<0.95:
+        return False
+    return True
+
 def processData(dataset):
     filtered = filterData(dataset)
-    normalised = Normalize(filtered)
+    normalised = np.squeeze(np.transpose(Normalize(filtered)))
     resized = resize(normalised)
     upsampled = resample(resized, 9000)
-    reshaped = upsampled.reshape((1,9000,1))
+    reshaped = embeddingTuple(upsampled, 18000)
     return reshaped
 
 def filterData(dataset):
@@ -53,12 +62,20 @@ def resize(dataset):
     if dataset.shape[0]>7500:
         resized_data = dataset[0:7500,:]
     else: 
-        padding = np.zeros((7500 - dataset.size, 1))
-        resized_data = np.append(dataset, padding)
+        resized_data = embeddingTuple((dataset),7500)
     return resized_data
 
-def embeddingTupel(data, maxLength):
+def embeddingTuple(data, maxLength):
     maxLength = np.int(maxLength)
     temp = np.full((maxLength-data.shape[0],),0)
     dataEmb = np.concatenate((data,temp.reshape(temp.shape[0],)),axis=0)
     return dataEmb
+
+def second_largest(array):
+    sortedgivenArray = sorted(array, reverse = True)
+    if len(sortedgivenArray) == 0: 
+        return 0
+    else:
+        secondLargestNumber = sortedgivenArray[1]
+
+    return secondLargestNumber
