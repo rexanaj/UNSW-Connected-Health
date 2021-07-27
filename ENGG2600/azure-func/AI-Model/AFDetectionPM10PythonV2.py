@@ -12,13 +12,13 @@ from scipy import signal
 from scipy.signal import convolve as sig_convolve
 ## loading the model
 # Set this to the model's path
-Model = load_model('C:\\Users\\Reza\\anaconda3\\ModelTrainedOnCambellSamples.h5')
+Model = load_model('AI-Model/NewAIModel.h5')
 
 ## Reading dat file
 # Set this path
-path_dat = 'D:\\Nigel Projects\AF Detection\ecgSamplesNew\\NewSamplesCambell\\Patient 15F (Lead III) - AF\\'
+path_dat = 'AI-Model/data/0001-1/ecg.dat'
 
-fin = open(path_dat+'ecg.dat', 'rb')
+fin = open(path_dat, 'rb')
 a = np.fromfile(fin, dtype=np.dtype('<u2'))
 X=[]
 for x in a:
@@ -67,14 +67,23 @@ new_sample_flt_norm_resize_upsamp = resample(new_sample_flt_norm_resize, 9000)
 new_sample_flt_norm_resize_upsamp_padd = embeddingTupel(new_sample_flt_norm_resize_upsamp,18000)
 
 predProb = Model.predict(np.expand_dims(np.expand_dims(new_sample_flt_norm_resize_upsamp_padd,axis=1),axis=0))
+print(predProb)
+print(predProb.shape)
 Prediction = np.argmax(predProb)+1
+print(Prediction, "is the prediction of the sample")
 def second_largest(array):
+    print(array, "array before sorting")
     sortedgivenArray = sorted(array, reverse = True)
+    print(array, "array after sorting")
     secondLargestNumber = sortedgivenArray[1]
     return secondLargestNumber
 Reject = 0
-if np.max(predProb)<0.97 and (np.max(predProb)-second_largest(predProb))<0.95:
-    Reject = 1
-    
+if np.max(predProb)<0.97:
+    print("met the first requirement")
+    if (np.max(predProb)-second_largest(predProb))<0.95:
+        print("about to change the rejection value to be true")
+        Reject = 1
+else:
+    print("value is not less than 0.97")
 print(Prediction)
 print(Reject)
