@@ -7,6 +7,7 @@ Created on Wed May  5 19:56:29 2021
 
 import numpy as np
 from tensorflow.keras.models import load_model
+import scipy
 from scipy.signal import butter, lfilter, resample
 from scipy import signal
 from scipy.signal import convolve as sig_convolve
@@ -16,7 +17,8 @@ Model = load_model('AI-Model/NewAIModel.h5')
 
 ## Reading dat file
 # Set this path
-path_dat = 'AI-Model/data/0001-1/ecg.dat'
+path_dat = 'AI-Model/data/0001-5/ecg.dat'
+print(scipy.version.version)
 
 fin = open(path_dat, 'rb')
 a = np.fromfile(fin, dtype=np.dtype('<u2'))
@@ -73,13 +75,12 @@ Prediction = np.argmax(predProb)+1
 print(Prediction, "is the prediction of the sample")
 def second_largest(array):
     print(array, "array before sorting")
-    sortedgivenArray = sorted(array, reverse = True)
+    sortedgivenArray = sorted(array[0], reverse = True)
     print(array, "array after sorting")
     secondLargestNumber = sortedgivenArray[1]
     return secondLargestNumber
 Reject = 0
 if np.max(predProb)<0.97:
-    print("met the first requirement")
     if (np.max(predProb)-second_largest(predProb))<0.95:
         print("about to change the rejection value to be true")
         Reject = 1

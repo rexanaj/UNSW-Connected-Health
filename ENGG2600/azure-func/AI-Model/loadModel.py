@@ -26,9 +26,9 @@ def getPrediction(predictionProbability):
     elif prediction == 2:
         return "NSR"
     elif prediction == 3:
-        return "Other"
+        return "other "
     elif prediction == 4:
-        return "Too noisy"
+        return "Too noisy "
     else:
         return "Model failed"
 
