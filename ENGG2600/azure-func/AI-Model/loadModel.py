@@ -13,6 +13,7 @@ def getPredictionProbability(model, dataset):
     # Process sample
     processedSample = processData(dataset)
     predProb = model.predict(np.expand_dims(np.expand_dims(processedSample,axis=1),axis=0))
+    print(predProb, "is the prediction probabilities")
     return predProb
 
 def getPrediction(predictionProbability):
@@ -72,7 +73,7 @@ def embeddingTuple(data, maxLength):
     return dataEmb
 
 def second_largest(array):
-    sortedgivenArray = sorted(array, reverse = True)
+    sortedgivenArray = sorted(array[0], reverse = True)
     if len(sortedgivenArray) == 0: 
         return 0
     else:

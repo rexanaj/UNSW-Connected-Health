@@ -7,3 +7,4 @@ numpy==1.19.0
 tensorflow==2.5.0
 matplotlib==3.4.2
 sklearn==0.0
+scipy==1.6.2

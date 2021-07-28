@@ -36,7 +36,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         predictionProbability = getPredictionProbability(model, sampData)
 
         # Get prediction
-        prediction = getPrediction(getPredictionProbability)
+        prediction = getPrediction(predictionProbability)
 
         # Check if rejected
         if isRejected(predictionProbability):
