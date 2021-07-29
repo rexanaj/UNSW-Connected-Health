@@ -32,7 +32,7 @@ def getAccuracy(plurality_given):
                 if plurality != plurality_given:
                     continue 
 
-                datafilePath = "./data/%s/ecg.dat" % sample_uid
+                datafilePath = "./Data/%s/ecg.dat" % sample_uid
                 response = ''
                 try: 
                     with open(datafilePath, "rb") as a_file:
@@ -44,10 +44,11 @@ def getAccuracy(plurality_given):
                     found_pred = responses[0]
                     found_reject = responses[1]
 
-                    print(f"Sample: {sample_uid}    Model: {model_pred}, {model_reject}    Function: {found_pred}, {found_reject}")
-
                     if model_pred == found_pred and model_reject == found_reject:
                         correct += 1
+                        print(f"Sample: {sample_uid}    Model: {model_pred}, {model_reject}    Function: {found_pred}, {found_reject}")
+                    else:
+                        print(f"Sample: {sample_uid}    Model: {model_pred}, {model_reject}    Function: {found_pred}, {found_reject} ------ DOES NOT MATCH")
                     
                     total += 1
                     
