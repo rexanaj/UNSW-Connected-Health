@@ -14,7 +14,7 @@ Where PLURALITY_VOTE is the no. of students who agreed with the model's output
 """
 Get the accuracy based on the retrained model data
 """
-def getAccuracy():
+def getAccuracy(plurality_given):
     correct = 0
     total = 0
     with open('ECG_Interpretation_New.csv') as read_obj:
@@ -25,8 +25,12 @@ def getAccuracy():
             for row in csv_reader:
                 # row variable is a list that represents a row in csv
                 sample_uid = row[0]
+                plurality = row[5]
                 model_pred = row[9]
                 model_reject = row[10]
+
+                if plurality != plurality_given:
+                    continue 
 
                 datafilePath = "./data/%s/ecg.dat" % sample_uid
                 response = ''
@@ -115,11 +119,11 @@ def getAccuracyStudentInterpretation(plurality_given):
 
 
 if __name__ == "__main__":
-    # plurality_count = 0
-    # if len(sys.argv) == 1:
-    #     print("Usage: python3 testNewModel.py PLURALITY_COUNT")
-    #     sys.exit(1)
-    # plurality_given = sys.argv[1]
+    plurality_count = 0
+    if len(sys.argv) == 1:
+        print("Usage: python3 testNewModel.py PLURALITY_COUNT")
+        sys.exit(1)
+    plurality_given = sys.argv[1]
     # getAccuracyStudentInterpretation(plurality_given)
-    
+
     getAccuracy()
