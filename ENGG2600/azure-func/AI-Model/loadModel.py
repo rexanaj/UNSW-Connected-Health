@@ -21,16 +21,17 @@ def getPrediction(predictionProbability):
     prediction = np.argmax(predictionProbability)+1
 
     # Print results
-    if prediction == 1:
-        return "AFIB"
-    elif prediction == 2:
-        return "NSR"
-    elif prediction == 3:
-        return "other "
-    elif prediction == 4:
-        return "Too noisy "
-    else:
-        return "Model failed"
+    # if prediction == 1:
+    #     return "AFIB"
+    # elif prediction == 2:
+    #     return "NSR"
+    # elif prediction == 3:
+    #     return "other "
+    # elif prediction == 4:
+    #     return "Too noisy "
+    # else:
+    #     return "Model failed"
+    return prediction
 
 def isRejected(predictionProbability):
     if np.max(predictionProbability)<0.97 and (np.max(predictionProbability)-second_largest(predictionProbability))<0.95:

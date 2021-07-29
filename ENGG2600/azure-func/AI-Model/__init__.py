@@ -36,16 +36,17 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         predictionProbability = getPredictionProbability(model, sampData)
 
         # Get prediction
-        prediction = getPrediction(predictionProbability)
+        prediction = str(getPrediction(predictionProbability))
 
         # Check if rejected
+        rejection = ""
         if isRejected(predictionProbability):
-            logging.info("Sample rejected")
-            logging.info(prediction)
+            rejection = ",0"
         else:
-            logging.info("Sample NOT rejected")
-            logging.info(prediction)
+            rejection = ",1"
 
+        prediction += rejection
+        logging.info(prediction)
         return func.HttpResponse(prediction)
 
     else:
