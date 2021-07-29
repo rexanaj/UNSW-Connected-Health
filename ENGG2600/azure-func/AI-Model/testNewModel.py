@@ -44,7 +44,7 @@ def getAccuracy(plurality_given):
                     found_pred = responses[0]
                     found_reject = responses[1]
 
-                    print(f"{sample_uid}\tmodel: {model_pred}, {model_reject}\tfunction: {found_pred}, {found_reject}")
+                    print(f"Sample: {sample_uid}    Model: {model_pred}, {model_reject}    Function: {found_pred}, {found_reject}")
 
                     if model_pred == found_pred and model_reject == found_reject:
                         correct += 1
@@ -98,7 +98,7 @@ def getAccuracyStudentInterpretation(plurality_given):
                         prediction = response.text
 
                     # Format prediction
-                    print(f"{sample_uid}\tModel predicted: {prediction}\tStudent interpretation: {output}")
+                    print(f"Sample: {sample_uid}    Model predicted: {prediction}    Student interpretation: {output}")
                         
                     if prediction == output:
                         correct += 1
@@ -126,4 +126,5 @@ if __name__ == "__main__":
     plurality_given = sys.argv[1]
     # getAccuracyStudentInterpretation(plurality_given)
 
-    getAccuracy()
+    print(f"Plurality given: {plurality_given}")
+    getAccuracy(plurality_given)
