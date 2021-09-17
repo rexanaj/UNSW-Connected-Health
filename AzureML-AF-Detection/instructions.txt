@@ -1,0 +1,8 @@
+1. Ensure that azureml-core and azureml packages are installed
+2. install docker so that you can run locally 
+3. Change the subscriptionid, workspace name and resource_group name in create_workspace.py
+4. create .azureml as a directory
+5. Run workspace.py and check that the workspace was created in your azure portal
+6. ensure that 'source_dir' and 'source_dir/entry_script.py' exist
+7. alter deploy.py to use your workspace and subscriptionid names
+8. run deploy.py (this is the part i cant get to work properly )
