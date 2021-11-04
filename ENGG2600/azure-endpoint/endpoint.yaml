@@ -1,0 +1,32 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineEndpoint.schema.json
+name: my-afendpoint
+type: online
+auth_mode: key
+traffic:
+  blue: 100
+
+deployments:
+  #blue deployment
+  - name: blue
+    model:
+      name: model-1
+      version: 1
+      local_path: scoring/model.h5
+    code_configuration:
+      code:
+        local_path: scoring
+      scoring_script: score.py
+    environment:
+      name: env-model1
+      version: 1
+      conda_file: file:conda.yaml
+      docker:
+        image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:20210727.v1
+    instance_type: Standard_F2s_v2
+    scale_settings:
+      scale_type: Manual
+      instance_count: 1
+      min_instances: 1
+      max_instances: 2
+    request_settings:
+      request_timeout_ms: 89000
