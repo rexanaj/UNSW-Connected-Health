@@ -1,0 +1,320 @@
+Plurality given: 3
+Sample: 0001-2    Model: 1, 0    Function: 1, 0
+Sample: 0001-3    Model: 1, 0    Function: 1, 0
+Sample: 0001-5    Model: 1, 0    Function: 1, 0
+Sample: 0001-6    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0001-9    Model: 2, 0    Function: 2, 0
+Sample: 0001-10    Model: 2, 0    Function: 2, 0
+Sample: 0001-11    Model: 2, 0    Function: 2, 0
+Sample: 0001-12    Model: 2, 0    Function: 2, 0
+Sample: 0002-1    Model: 1, 0    Function: 1, 0
+Sample: 0002-2    Model: 1, 0    Function: 1, 0
+Sample: 0002-3    Model: 1, 0    Function: 1, 0
+Sample: 0002-4    Model: 1, 0    Function: 1, 0
+Sample: 0002-5    Model: 1, 0    Function: 1, 0
+Sample: 0002-6    Model: 1, 0    Function: 1, 0
+Sample: 0003-2    Model: 2, 0    Function: 2, 0
+Sample: 0003-3    Model: 4, 0    Function: 4, 1 ------ DOES NOT MATCH
+Sample: 0003-4    Model: 4, 0    Function: 4, 0
+Sample: 0004-1    Model: 4, 1    Function: 4, 0 ------ DOES NOT MATCH
+Sample: 0004-2    Model: 4, 0    Function: 4, 1 ------ DOES NOT MATCH
+Sample: 0004-3    Model: 4, 1    Function: 4, 0 ------ DOES NOT MATCH
+Sample: 0004-4    Model: 4, 1    Function: 4, 1
+Sample: 0004-6    Model: 4, 1    Function: 4, 1
+Sample: 0005-1    Model: 4, 1    Function: 4, 1
+Sample: 0005-2    Model: 4, 0    Function: 4, 0
+Sample: 0005-3    Model: 2, 0    Function: 2, 0
+Sample: 0005-4    Model: 2, 0    Function: 2, 0
+Sample: 0005-5    Model: 2, 0    Function: 2, 0
+Sample: 0005-6    Model: 2, 0    Function: 2, 0
+Sample: 0006-1    Model: 4, 1    Function: 4, 1
+Sample: 0006-2    Model: 4, 1    Function: 4, 1
+Sample: 0006-3    Model: 2, 0    Function: 2, 0
+Sample: 0006-4    Model: 2, 0    Function: 2, 0
+Sample: 0006-5    Model: 2, 0    Function: 2, 0
+Sample: 0006-6    Model: 2, 0    Function: 2, 1 ------ DOES NOT MATCH
+Sample: 0007-1    Model: 2, 0    Function: 2, 0
+Sample: 0007-2    Model: 2, 0    Function: 2, 0
+Sample: 0007-3    Model: 2, 0    Function: 2, 0
+Sample: 0008-1    Model: 4, 0    Function: 4, 0
+Sample: 0008-2    Model: 2, 0    Function: 2, 0
+Sample: 0008-3    Model: 2, 1    Function: 2, 1
+Sample: 0009-1    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0009-2    Model: 1, 0    Function: 1, 0
+Sample: 0009-3    Model: 1, 0    Function: 1, 0
+Sample: 0010-1    Model: 1, 0    Function: 1, 0
+Sample: 0010-2    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0010-3    Model: 1, 0    Function: 1, 0
+Sample: 0010-4    Model: 1, 0    Function: 1, 0
+Sample: 0010-5    Model: 1, 1    Function: 4, 1 ------ DOES NOT MATCH
+Sample: 0010-6    Model: 1, 0    Function: 1, 0
+Sample: 0011-2    Model: 4, 1    Function: 4, 0 ------ DOES NOT MATCH
+Sample: 0011-3    Model: 2, 0    Function: 2, 0
+Sample: 0011-4    Model: 2, 0    Function: 2, 0
+Sample: 0011-5    Model: 2, 0    Function: 2, 0
+Sample: 0011-6    Model: 2, 0    Function: 2, 0
+Sample: 0012-1    Model: 1, 0    Function: 1, 0
+Sample: 0012-2    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0012-3    Model: 1, 0    Function: 1, 0
+Sample: 0012-4    Model: 1, 0    Function: 1, 0
+Sample: 0012-5    Model: 1, 0    Function: 1, 0
+Sample: 0012-6    Model: 1, 0    Function: 1, 0
+Sample: 0013-1    Model: 1, 0    Function: 1, 0
+Sample: 0013-2    Model: 1, 0    Function: 1, 0
+Sample: 0013-3    Model: 1, 0    Function: 1, 0
+Sample: 0013-4    Model: 1, 0    Function: 1, 0
+Sample: 0013-5    Model: 1, 0    Function: 1, 0
+Sample: 0013-6    Model: 1, 0    Function: 1, 0
+Sample: 0014-1    Model: 2, 1    Function: 2, 1
+Sample: 0014-2    Model: 2, 1    Function: 2, 1
+Sample: 0014-3    Model: 2, 1    Function: 2, 1
+Sample: 0014-4    Model: 4, 1    Function: 4, 1
+Sample: 0015-1    Model: 1, 0    Function: 1, 0
+Sample: 0015-2    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0015-3    Model: 1, 0    Function: 1, 0
+Sample: 0015-4    Model: 1, 0    Function: 1, 0
+Sample: 0015-5    Model: 1, 0    Function: 1, 0
+Sample: 0015-6    Model: 1, 0    Function: 1, 0
+Sample: 0016-1    Model: 2, 0    Function: 2, 0
+Sample: 0016-2    Model: 2, 0    Function: 2, 0
+Sample: 0016-3    Model: 2, 0    Function: 2, 0
+Sample: 0016-4    Model: 2, 0    Function: 2, 0
+Sample: 0016-5    Model: 2, 0    Function: 2, 0
+Sample: 0016-6    Model: 2, 0    Function: 2, 0
+Sample: 0017-1    Model: 1, 0    Function: 1, 0
+Sample: 0017-2    Model: 1, 0    Function: 1, 0
+Sample: 0017-3    Model: 1, 0    Function: 1, 0
+Sample: 0017-4    Model: 1, 0    Function: 1, 0
+Sample: 0017-5    Model: 1, 0    Function: 1, 0
+Sample: 0017-6    Model: 1, 0    Function: 1, 0
+Sample: 0018-1    Model: 2, 0    Function: 2, 0
+Sample: 0018-2    Model: 2, 0    Function: 2, 0
+Sample: 0018-3    Model: 4, 1    Function: 4, 1
+Sample: 0018-4    Model: 4, 1    Function: 4, 0 ------ DOES NOT MATCH
+Sample: 0018-5    Model: 2, 0    Function: 2, 0
+Sample: 0018-6    Model: 2, 0    Function: 2, 0
+Sample: 0019-3    Model: 2, 1    Function: 2, 1
+Sample: 0019-4    Model: 2, 0    Function: 2, 0
+Sample: 0019-5    Model: 2, 0    Function: 2, 0
+Sample: 0019-6    Model: 2, 0    Function: 2, 0
+Sample: 0020-1    Model: 4, 1    Function: 2, 1 ------ DOES NOT MATCH
+Sample: 0020-2    Model: 2, 0    Function: 2, 0
+Sample: 0020-3    Model: 2, 0    Function: 2, 0
+Sample: 0021-1    Model: 4, 1    Function: 4, 1
+Sample: 0021-2    Model: 4, 1    Function: 4, 1
+Sample: 0021-3    Model: 2, 0    Function: 2, 1 ------ DOES NOT MATCH
+Sample: 0021-4    Model: 2, 0    Function: 2, 0
+Sample: 0021-5    Model: 2, 0    Function: 2, 0
+Sample: 0021-6    Model: 2, 0    Function: 2, 0
+Sample: 0022-1    Model: 4, 1    Function: 4, 1
+Sample: 0022-2    Model: 4, 1    Function: 4, 0 ------ DOES NOT MATCH
+Sample: 0022-3    Model: 2, 0    Function: 2, 0
+Sample: 0022-4    Model: 2, 0    Function: 2, 0
+Sample: 0022-5    Model: 2, 0    Function: 2, 1 ------ DOES NOT MATCH
+Sample: 0022-6    Model: 2, 0    Function: 2, 0
+Sample: 0023-1    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0024-1    Model: 1, 0    Function: 1, 0
+Sample: 0024-2    Model: 1, 0    Function: 1, 0
+Sample: 0024-3    Model: 1, 0    Function: 1, 0
+Sample: 0024-4    Model: 1, 0    Function: 1, 0
+Sample: 0024-5    Model: 1, 0    Function: 1, 0
+Sample: 0024-6    Model: 1, 0    Function: 1, 0
+Sample: 0028-1    Model: 1, 0    Function: 1, 0
+Sample: 0028-2    Model: 1, 0    Function: 1, 0
+Sample: 0028-3    Model: 1, 0    Function: 1, 0
+Sample: 0028-4    Model: 1, 0    Function: 1, 0
+Sample: 0028-5    Model: 1, 1    Function: 1, 1
+Sample: 0028-6    Model: 1, 0    Function: 1, 0
+Sample: 0028-7    Model: 1, 0    Function: 1, 0
+Sample: 0029-3    Model: 1, 0    Function: 1, 0
+Sample: 0029-4    Model: 1, 0    Function: 1, 0
+Sample: 0029-5    Model: 1, 0    Function: 1, 0
+Sample: 0029-6    Model: 1, 0    Function: 1, 0
+Sample: 0030-1    Model: 1, 1    Function: 1, 1
+Sample: 0030-2    Model: 1, 1    Function: 1, 1
+Sample: 0030-3    Model: 1, 0    Function: 1, 0
+Sample: 0030-4    Model: 1, 0    Function: 1, 0
+Sample: 0030-5    Model: 1, 0    Function: 1, 0
+Sample: 0030-6    Model: 1, 0    Function: 1, 0
+Sample: 0030-7    Model: 4, 0    Function: 4, 0
+Sample: 0030-8    Model: 4, 0    Function: 4, 0
+Sample: 0030-9    Model: 1, 0    Function: 1, 0
+Sample: 0030-10    Model: 1, 0    Function: 1, 0
+Sample: 0030-11    Model: 1, 0    Function: 1, 0
+Sample: 0030-12    Model: 1, 0    Function: 1, 0
+Sample: 0031-1    Model: 4, 1    Function: 4, 0 ------ DOES NOT MATCH
+Sample: 0031-2    Model: 4, 1    Function: 4, 0 ------ DOES NOT MATCH
+Sample: 0032-1    Model: 4, 0    Function: 4, 0
+Sample: 0048-1    Model: 1, 0    Function: 1, 0
+Sample: 0048-2    Model: 1, 1    Function: 1, 0 ------ DOES NOT MATCH
+Sample: 0048-3    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0048-4    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0048-5    Model: 1, 0    Function: 1, 0
+Sample: 0048-7    Model: 1, 0    Function: 1, 0
+Sample: 0048-8    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0048-9    Model: 1, 0    Function: 1, 0
+Sample: 0049-1    Model: 4, 1    Function: 2, 1 ------ DOES NOT MATCH
+Sample: 0049-2    Model: 4, 1    Function: 4, 1
+Sample: 0049-3    Model: 2, 0    Function: 2, 0
+Sample: 0049-4    Model: 2, 0    Function: 2, 0
+Sample: 0049-5    Model: 2, 0    Function: 2, 0
+Sample: 0050-1    Model: 1, 1    Function: 1, 1
+Sample: 0050-2    Model: 1, 0    Function: 1, 0
+Sample: 0050-3    Model: 1, 0    Function: 1, 0
+Sample: 0050-4    Model: 1, 0    Function: 1, 0
+Sample: 0050-5    Model: 1, 0    Function: 1, 0
+Sample: 0050-6    Model: 1, 0    Function: 1, 0
+Sample: 0051-1    Model: 1, 0    Function: 1, 0
+Sample: 0051-2    Model: 1, 0    Function: 1, 0
+Sample: 0051-3    Model: 1, 0    Function: 1, 0
+Sample: 0051-4    Model: 1, 0    Function: 1, 0
+Sample: 0051-5    Model: 1, 0    Function: 1, 0
+Sample: 0051-6    Model: 1, 0    Function: 1, 0
+Sample: 0052-1    Model: 2, 0    Function: 2, 0
+Sample: 0052-3    Model: 2, 0    Function: 2, 0
+Sample: 0052-4    Model: 2, 0    Function: 2, 0
+Sample: 0053-1    Model: 1, 1    Function: 1, 1
+Sample: 0053-2    Model: 4, 0    Function: 4, 0
+Sample: 0053-4    Model: 4, 0    Function: 4, 0
+Sample: 0053-5    Model: 1, 0    Function: 1, 0
+Sample: 0053-6    Model: 1, 1    Function: 1, 1
+Sample: 0054-3    Model: 2, 1    Function: 2, 0 ------ DOES NOT MATCH
+Sample: 0054-4    Model: 2, 1    Function: 2, 0 ------ DOES NOT MATCH
+Sample: 0056-1    Model: 4, 1    Function: 4, 1
+Sample: 0058-4    Model: 1, 0    Function: 1, 0
+Sample: 0058-6    Model: 1, 0    Function: 1, 0
+Sample: 0060-1    Model: 4, 0    Function: 4, 1 ------ DOES NOT MATCH
+Sample: 0060-2    Model: 4, 0    Function: 4, 0
+Sample: 0060-4    Model: 1, 0    Function: 1, 0
+Sample: 0061-1    Model: 4, 0    Function: 4, 0
+Sample: 0061-2    Model: 4, 0    Function: 4, 0
+Sample: 0062-1    Model: 2, 0    Function: 2, 0
+Sample: 0062-2    Model: 2, 0    Function: 2, 0
+Sample: 0062-3    Model: 2, 0    Function: 2, 0
+Sample: 0062-4    Model: 2, 0    Function: 2, 0
+Sample: 0062-5    Model: 2, 0    Function: 2, 0
+Sample: 0062-6    Model: 2, 0    Function: 2, 0
+Sample: 0062-7    Model: 2, 0    Function: 2, 0
+Sample: 0063-1    Model: 2, 0    Function: 2, 0
+Sample: 0063-2    Model: 2, 0    Function: 2, 0
+Sample: 0063-3    Model: 2, 0    Function: 2, 0
+Sample: 0063-4    Model: 2, 0    Function: 2, 0
+Sample: 0065-2    Model: 1, 0    Function: 1, 0
+Sample: 0065-3    Model: 1, 0    Function: 1, 0
+Sample: 0068-1    Model: 1, 0    Function: 1, 0
+Sample: 0068-2    Model: 1, 1    Function: 1, 0 ------ DOES NOT MATCH
+Sample: 0068-3    Model: 1, 1    Function: 1, 1
+Sample: 0068-4    Model: 1, 0    Function: 1, 0
+Sample: 0068-5    Model: 1, 0    Function: 1, 0
+Sample: 0068-6    Model: 1, 0    Function: 1, 0
+Sample: 0068-7    Model: 1, 0    Function: 1, 0
+Sample: 0069-1    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0069-2    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0069-3    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0070-1    Model: 2, 0    Function: 2, 0
+Sample: 0070-2    Model: 2, 0    Function: 2, 0
+Sample: 0070-4    Model: 2, 0    Function: 2, 0
+Sample: 0071-1    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0071-2    Model: 1, 0    Function: 1, 0
+Sample: 0071-3    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0071-4    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0071-5    Model: 1, 0    Function: 1, 0
+Sample: 0071-6    Model: 1, 0    Function: 1, 0
+Sample: 0072-1    Model: 1, 0    Function: 1, 0
+Sample: 0072-2    Model: 1, 0    Function: 1, 0
+Sample: 0072-3    Model: 1, 0    Function: 1, 0
+Sample: 0072-4    Model: 1, 0    Function: 1, 0
+Sample: 0073-1    Model: 4, 0    Function: 4, 1 ------ DOES NOT MATCH
+Sample: 0073-2    Model: 4, 1    Function: 4, 1
+Sample: 0073-3    Model: 4, 1    Function: 4, 0 ------ DOES NOT MATCH
+Sample: 0073-4    Model: 4, 1    Function: 4, 1
+Sample: 0073-5    Model: 4, 1    Function: 4, 1
+Sample: 0073-7    Model: 4, 0    Function: 4, 0
+Sample: 0075-1    Model: 1, 1    Function: 1, 1
+Sample: 0075-2    Model: 1, 1    Function: 4, 1 ------ DOES NOT MATCH
+Sample: 0075-3    Model: 1, 0    Function: 1, 0
+Sample: 0075-4    Model: 1, 0    Function: 1, 0
+Sample: 0075-5    Model: 1, 0    Function: 1, 0
+Sample: 0075-6    Model: 1, 0    Function: 1, 0
+Sample: 0076-1    Model: 4, 0    Function: 4, 0
+Sample: 0076-3    Model: 1, 0    Function: 1, 0
+Sample: 0076-4    Model: 1, 0    Function: 1, 0
+Sample: 0076-5    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0076-6    Model: 1, 0    Function: 1, 0
+Sample: 0078-1    Model: 4, 0    Function: 4, 0
+Sample: 0078-2    Model: 4, 1    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0078-3    Model: 1, 0    Function: 1, 0
+Sample: 0078-4    Model: 1, 0    Function: 1, 0
+Sample: 0079-1    Model: 1, 0    Function: 1, 0
+Sample: 0079-2    Model: 1, 0    Function: 1, 0
+Sample: 0079-3    Model: 1, 0    Function: 1, 0
+Sample: 0079-4    Model: 1, 0    Function: 1, 0
+Sample: 0079-5    Model: 1, 0    Function: 1, 0
+Sample: 0079-6    Model: 1, 0    Function: 1, 0
+Sample: 0081-1    Model: 3, 0    Function: 3, 0
+Sample: 0081-2    Model: 3, 0    Function: 3, 0
+Sample: 0081-3    Model: 3, 0    Function: 3, 0
+Sample: 0081-4    Model: 3, 0    Function: 3, 1 ------ DOES NOT MATCH
+Sample: 0087-1    Model: 2, 0    Function: 2, 0
+Sample: 0087-2    Model: 2, 1    Function: 2, 1
+Sample: 0087-3    Model: 2, 0    Function: 2, 0
+Sample: 0087-4    Model: 2, 0    Function: 2, 0
+Sample: 0087-5    Model: 4, 0    Function: 4, 0
+Sample: 0087-6    Model: 4, 0    Function: 4, 0
+Sample: 0089-1    Model: 4, 1    Function: 4, 1
+Sample: 0089-2    Model: 4, 0    Function: 4, 1 ------ DOES NOT MATCH
+Sample: 0089-3    Model: 2, 0    Function: 2, 1 ------ DOES NOT MATCH
+Sample: 0089-4    Model: 2, 0    Function: 2, 1 ------ DOES NOT MATCH
+Sample: 0089-5    Model: 2, 0    Function: 2, 0
+Sample: 0089-6    Model: 2, 0    Function: 2, 0
+Sample: 0090-1    Model: 2, 0    Function: 2, 0
+Sample: 0090-2    Model: 2, 0    Function: 2, 1 ------ DOES NOT MATCH
+Sample: 0090-3    Model: 2, 0    Function: 2, 0
+Sample: 0090-4    Model: 2, 0    Function: 2, 0
+Sample: 0090-5    Model: 2, 1    Function: 2, 1
+Sample: 0090-6    Model: 4, 0    Function: 4, 0
+Sample: 0091-7    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0091-8    Model: 1, 0    Function: 1, 0
+Sample: 0091-9    Model: 1, 0    Function: 1, 1 ------ DOES NOT MATCH
+Sample: 0092-2    Model: 1, 0    Function: 1, 0
+Sample: 0093-1    Model: 1, 0    Function: 1, 0
+Sample: 0093-2    Model: 1, 0    Function: 1, 0
+Sample: 0095-5    Model: 1, 0    Function: 1, 0
+Sample: 0095-6    Model: 1, 0    Function: 1, 0
+Sample: 0095-7    Model: 1, 0    Function: 1, 0
+Sample: 0096-1    Model: 2, 0    Function: 2, 0
+Sample: 0096-2    Model: 2, 0    Function: 2, 0
+Sample: 0096-3    Model: 2, 0    Function: 2, 0
+Sample: 0096-4    Model: 2, 0    Function: 2, 0
+Sample: 0096-5    Model: 4, 1    Function: 2, 1 ------ DOES NOT MATCH
+Sample: 0096-6    Model: 4, 1    Function: 4, 1
+Sample: 0098-1    Model: 2, 0    Function: 2, 0
+Sample: 0098-2    Model: 2, 0    Function: 2, 0
+Sample: 0098-3    Model: 2, 0    Function: 2, 0
+Sample: 0098-4    Model: 2, 0    Function: 2, 0
+Sample: 0098-5    Model: 4, 1    Function: 2, 1 ------ DOES NOT MATCH
+Sample: 0098-6    Model: 4, 0    Function: 4, 0
+Sample: 0099-2    Model: 2, 0    Function: 2, 0
+Sample: 0099-3    Model: 2, 0    Function: 2, 0
+Sample: 0099-4    Model: 2, 0    Function: 2, 0
+Sample: 0099-5    Model: 2, 1    Function: 2, 1
+Sample: 0100-1    Model: 1, 0    Function: 1, 0
+Sample: 0100-2    Model: 1, 0    Function: 1, 0
+Sample: 0100-3    Model: 1, 0    Function: 1, 0
+Sample: 0100-4    Model: 1, 0    Function: 1, 0
+Sample: 0100-5    Model: 1, 0    Function: 1, 0
+Sample: 0100-6    Model: 1, 0    Function: 1, 0
+Sample: 0101-1    Model: 4, 1    Function: 4, 1
+Sample: 0101-2    Model: 4, 0    Function: 4, 0
+Sample: 0101-3    Model: 3, 0    Function: 3, 0
+Sample: 0101-4    Model: 3, 0    Function: 3, 0
+Sample: 0101-5    Model: 3, 0    Function: 3, 0
+Sample: 0102-1    Model: 2, 0    Function: 2, 0
+Sample: 0102-2    Model: 2, 0    Function: 2, 0
+Sample: 0102-3    Model: 2, 0    Function: 2, 0
+Sample: 0102-4    Model: 2, 0    Function: 2, 0
+Sample: 0102-5    Model: 2, 0    Function: 2, 0
+Sample: 0102-6    Model: 2, 0    Function: 2, 0
+Number correct = 267
+Total number = 316
+Proportion correct: 84.49367088607595%

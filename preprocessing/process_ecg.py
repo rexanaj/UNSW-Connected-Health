@@ -5,8 +5,6 @@ from scipy import signal
 from scipy.signal import butter, lfilter, resample
 from scipy.signal import convolve as sig_convolve
 
-import time, datetime
-
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
@@ -81,7 +79,7 @@ def second_largest(array):
 
 def process(data:np.ndarray):
     """
-    Pre-processes the sample
+    Processes the sample
     """
     slice = data[0:2]
     logging.info(data.size)  # for debugging, print data length
