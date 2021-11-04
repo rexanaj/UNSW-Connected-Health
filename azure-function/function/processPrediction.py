@@ -9,6 +9,11 @@ from scipy.signal import resample
 from scipy import signal
 from scipy.signal import convolve as sig_convolve
 
+"""
+An older preprocess file - refer to preprocess_ecg.py in other folders for 
+updated version
+"""
+
 def getPredictionProbability(model, dataset):
     # Process sample
     processedSample = processData(dataset)

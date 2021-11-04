@@ -8,10 +8,13 @@ from scipy import signal
 from scipy.signal import butter, lfilter, resample
 from scipy.signal import convolve as sig_convolve
 
+
+# TODO: Add model path here
+model_path = ''
+
 def init():
     global model
-    #model_path = os.path.join(os.getenv("AZUREML_MODEL_DIR"), "model.h5")
-    model = load_model("model.h5")
+    model = load_model(model_path)
 
 def filter(input):
     temp1 = signal.medfilt(input, kernel_size=np.int64(250/5+1))

@@ -28,7 +28,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         
     if sampleData is not None:
         # Load model
-        model = load_model('./AI-Model/NewAIModel.h5')
+        # TODO: Add model path here 
+        model = load_model('./MODEL_NAME')
         dataset = []
         for x in sampleData:
             dataset.append(x)
